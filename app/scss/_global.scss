@@ -1,0 +1,74 @@
+// VARS
+$black-color: #1e2120;
+$white-color: #fff;
+$yellow-color: #FFD40C;
+$second-color: #464DF6;
+
+// GLOBAL
+html {
+	font-size: 20px;
+}
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Jura';
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+// switch for change lang
+.switch {
+
+	&__input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		&:checked + label {
+			&::before {
+				left: calc(100% - 5px);
+				transform: translateX(-100%);
+			}
+			span {
+				color: $black-color;
+			}
+			span + span {
+				color: $white-color;
+			}
+		}
+	}
+
+	&__label {
+		cursor: pointer;
+		width: 160px;
+		height: 70px;
+		border: 1px solid $black-color;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		position: relative;
+		span {
+			color: $white-color;
+			position: relative;
+			transition: .1s linear;
+		}
+		span + span {
+			color: $black-color;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			bottom: 5px;
+			width: 50%;
+			background: #000;
+			transition: .1s linear;
+		}
+		span {
+			width: 50%;
+		}
+	}
+}
