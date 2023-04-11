@@ -103,6 +103,11 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all .2s ease;
+	text-align: left;
+	@media (max-width: 768px) {
+		font-size: 0.8rem;
+		padding: 17px 80px 19px 30px;
+	}
 
 	&::before {
 		content: '';

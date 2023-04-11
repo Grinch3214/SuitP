@@ -97,6 +97,13 @@
 	&__main {
 		padding-top: 145px;
 		padding-bottom: 195px;
+		@media (max-width: 768px) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		@media (max-width: 620px) {
+			padding: 40px 0;
+		}
 	}
 
 	&__image {
@@ -113,11 +120,21 @@
 		display: flex;
 		justify-content: center;
 		gap: 40px;
+		@media (max-width: 620px) {
+			flex-flow: column;
+			gap: 10px;
+		}
 	}
 
 	&__buttons-btn {
 		max-width: 325px;
 		width: 100%;
+		@media (max-width: 768px) {
+			max-width: 260px;
+		}
+		@media (max-width: 620px) {
+			max-width: 100%;
+		}
 	}
 
 }
@@ -200,6 +217,7 @@
 	&__link {
 		text-decoration: none;
 		color: $black-color;
+		font-weight: 700;
 	}
 
 	&__switch {
