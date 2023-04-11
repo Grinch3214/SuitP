@@ -17,11 +17,22 @@ body {
 	font-family: 'Jura';
 	font-weight: 400;
 	font-size: 1rem;
+	line-height: 1.2rem;
+	color: $black-color;
+}
+.lock {
+	overflow: hidden;
+}
+.container {
+	max-width: 1734px;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
 // switch for change lang
 .switch {
-
+	font-size: 1.1rem;
+	line-height: 1.3rem;
 	&__input {
 		position: absolute;
 		z-index: -1;
@@ -49,10 +60,14 @@ body {
 		text-align: center;
 		align-items: center;
 		position: relative;
+		@media (max-width: 992px) {
+			width: 150px;
+			height: 60px;
+		}
 		span {
 			color: $white-color;
 			position: relative;
-			transition: .1s linear;
+			transition: color .1s linear;
 		}
 		span + span {
 			color: $black-color;
@@ -63,9 +78,9 @@ body {
 			top: 5px;
 			left: 5px;
 			bottom: 5px;
-			width: 50%;
+			width: calc(50% - 5px);
 			background: #000;
-			transition: .1s linear;
+			transition: all .1s linear;
 		}
 		span {
 			width: 50%;

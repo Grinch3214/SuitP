@@ -1,5 +1,5 @@
 // i18n change languages
-function changeLanguagei18n() {
+(function() {
   const elements = document.querySelectorAll('[data-i18n]');
 
   async function loadLanguageResources() {
@@ -37,17 +37,17 @@ function changeLanguagei18n() {
       });
       
       const langSelector = document.querySelector('.switch__input');
-      langSelector.checked = language === 'ua';
+      langSelector.checked = language === 'en';
 
       langSelector.addEventListener('change', () => {
-        const newLanguage = langSelector.checked ? 'ua' : 'en';
+        const newLanguage = langSelector.checked ? 'en' : 'ua';
         localStorage.setItem('language', newLanguage);
         i18next.changeLanguage(newLanguage);
       });
 
       i18next.on('languageChanged', () => {
         updateContent();
-        langSelector.checked = i18next.language === 'ua';
+        langSelector.checked = i18next.language === 'en';
       });
     } catch (err) {
       console.error(err);
@@ -62,5 +62,26 @@ function changeLanguagei18n() {
   }
 
   initialize();
-}
-changeLanguagei18n();
+})();
+
+// menu
+(function() {
+	const iconMenu = document.querySelector('.header__icon');
+	if(iconMenu) {
+		const headerMenu = document.querySelector('.header__menu');
+		const menuLinks = document.querySelectorAll('.menu__link');
+		iconMenu.addEventListener('click', (event) => {
+			document.body.classList.toggle('lock')
+			iconMenu.classList.toggle('active')
+			headerMenu.classList.toggle('active')
+		})
+		// menu link
+		menuLinks.forEach(elem => {
+			elem.addEventListener('click', (event) => {
+				document.body.classList.remove('lock')
+				iconMenu.classList.remove('active')
+				headerMenu.classList.remove('active')
+			})
+		})
+	}
+})();
