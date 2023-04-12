@@ -3,16 +3,67 @@
 	background: url('../images/ukraine.svg'), $second-color;
 	background-repeat: no-repeat;
 	background-position: 90% 50%;
+	color: $white-color;
+	@media (max-width: 768px) {
+		background-position: 50% 30%;
+		background-size: 566px 440px;
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		background-position: 50% 30%;
+		background-size: 366px 240px;
+	}
 	&__title {
+		color: $white-color;
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__text {
+		font-size: 1.2rem;
+		max-width: 850px;
+		margin-bottom: 195px;
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+			margin-bottom: 80px;
+		}
+		@media (max-width: 620px) {
+			margin-bottom: 40px;
+		}
+		span {
+			font-weight: 700;
+		}
 	}
 
 	&__button {
 	}
 
 	&__boosteroid {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+		@media (max-width: 768px) {
+			gap: 20px;
+			flex-flow: column;
+			align-items: flex-start;
+		}
+		span {
+			font-weight: 700;
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+			@media (max-width: 768px) {
+				font-size: 0.8rem;
+				line-height: 0.9rem;
+			}
+		}
+		img {
+			@media (max-width: 768px) {
+				width: 179px;
+				height: 14px;
+			}
+		}
 	}
 }
 
