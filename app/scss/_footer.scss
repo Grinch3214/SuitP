@@ -1,0 +1,28 @@
+.footer {
+	padding: 15px 0 40px;
+	@media (max-width: 768px) {
+		padding: 0 0 30px;
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 620px) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__box-mail, &__box-text {
+		color: $black-color;
+		font-size: 0.8rem;
+		line-height: 0.9rem;
+		text-decoration: none;
+	}
+
+	&__box-text {
+		@media (max-width: 620px) {
+			margin-top: 3px;
+		}
+	}
+}
+
