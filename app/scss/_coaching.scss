@@ -1,0 +1,82 @@
+.coaching {
+	background: $violet-color;
+	padding: 100px 0;
+	color: $white-color;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+	}
+	&__box {
+		display: flex;
+		margin-bottom: 85px;
+		@media (max-width: 1000px) {
+			flex-flow: column;
+			gap: 30px;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__desc {
+		max-width: 935px;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		span {
+			font-family: 'Montserrat';
+			font-weight: 700;
+		}
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+			line-height: 1rem;
+		}
+	}
+
+	&__logo {
+		flex: 1;
+		text-align: right;
+		@media (max-width: 1000px) {
+			text-align: left;
+		}
+		img {
+			@media (max-width: 768px) {
+				width: 150px;
+				height: 41px;
+			}
+			@media (max-width: 620px) {
+				width: 100px;
+				height: 31px;
+			}
+		}
+	}
+
+	&__cards {
+		color: $black-color;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+
+	&__card {
+		flex: 1 1 30%;
+		@media (max-width: 992px) {
+			flex: 1 1 100%;
+		}
+	}
+}

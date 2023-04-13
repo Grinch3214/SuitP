@@ -177,3 +177,39 @@ body {
 		}
 	}
 }
+
+// custom card
+.suitp-card {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	position: relative;
+	background: $white-color;
+	height: 120px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	font-weight: 700;
+
+	@media (max-width: 1000px) {
+		font-size: 1rem;
+		line-height: 100%;
+	}
+	
+	@media (max-width: 768px) {
+		height: 60px;
+		font-size: 0.9rem;
+		line-height: 1rem;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: $black-color;
+	}
+}

@@ -30,6 +30,9 @@
 
 	&__title {
 		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__text {
