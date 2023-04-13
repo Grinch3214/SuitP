@@ -1,5 +1,6 @@
 // VARS
 $black-color: #1e2120;
+$gray-color: #777;
 $white-color: #fff;
 $yellow-color: #FFD40C;
 $second-color: #464DF6;
@@ -215,5 +216,30 @@ body {
 			width: 10px;
 			height: 10px;
 		}
+	}
+}
+
+.form-floating {
+	&__input, &__textarea {
+		width: 100%;
+		padding: 23px 0;
+		border: none;
+		border-bottom: 1px solid $black-color;
+		font-size: 0.9rem;
+
+		&::placeholder {
+			color: $gray-color;
+			font-size: 0.9rem;
+		}
+
+		&:focus {
+			outline: none;
+			border-color: $second-color;
+		}
+	}
+
+	&__textarea {
+		height: 100px;
+		resize: none;
 	}
 }

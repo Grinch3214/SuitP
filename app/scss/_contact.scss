@@ -1,0 +1,82 @@
+.contact {
+	background: $white-color;
+	padding: 100px 0;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+	}
+	
+	&__inner {
+		text-align: center;
+		margin-bottom: 65px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		margin-bottom: 10px;
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+
+	&__mail {
+		color: $black-color;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 2rem;
+	}
+
+	&__form {
+		max-width: 934px;
+		margin: 0 auto;
+		// zaglushka
+		opacity: .5;
+		pointer-events: none;
+		cursor: default;
+	}
+
+	&__box {
+		display: flex;
+		flex-flow: wrap;
+		gap: 40px;
+	}
+
+	&__item {
+		flex: 1 1 45%;
+		&:last-child {
+			flex: 1 1 100%;
+		}
+	}
+
+	&__item-input {
+	}
+
+	&__item-textarea {
+		margin-bottom: 30px;
+	}
+
+	&__agree {
+		color: $gray-color;
+		font-size: 0.7rem;
+		margin-bottom: 30px;
+	}
+
+	&__btns {
+		text-align: center;
+		margin-bottom: 10px;
+		span {
+			display: block;
+			font-size: 0.7rem;
+		}
+	}
+
+	&__form-submit {
+		max-width: 445px;
+		width: 100%;
+	}
+}
