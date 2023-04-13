@@ -45,6 +45,18 @@ body {
 	}
 }
 
+.subtitle {
+	font-size: 1.8rem;
+	line-height: 100%;
+	font-weight: 700;
+	@media (max-width: 768px) {
+		font-size: 1.1rem;
+	}
+	@media (max-width: 620px) {
+		font-size: 0.9rem;
+	}
+}
+
 // switch for change lang
 .switch {
 	font-size: 1.1rem;

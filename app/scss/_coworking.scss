@@ -1,0 +1,61 @@
+.coworking {
+	padding: 100px 0;
+	background: url('../images/art_yellow_block.svg'), $yellow-color;
+	background-repeat: no-repeat;
+	background-position: 100% bottom;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+		background-size: 520px 354px;
+		background-position: 50% calc(100% + 48px);
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+		background-size: 320px 154px;
+		background-position: 50% 100%;
+	}
+	&__box {
+		max-width: 825px;
+		margin-bottom: 195px;
+		@media (max-width: 768px) {
+			margin-bottom: 80px;
+		}
+		@media (max-width: 620px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		span {
+			font-weight: 700;
+		}
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+			line-height: 1rem;
+		}
+	}
+
+	&__group {
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+
+	&__svg {
+		width: 415px;
+		height: 75px;
+		@media (max-width: 768px) {
+			width: 260px;
+			height: 48px;
+		}
+	}
+}
