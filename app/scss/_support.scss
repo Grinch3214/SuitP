@@ -1,0 +1,111 @@
+.support {
+
+	background: $lime-color;
+	padding: 100px 0;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+	}
+	&__box {
+		display: flex;
+		margin-bottom: 85px;
+		@media (max-width: 1000px) {
+			flex-flow: column;
+			gap: 30px;
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__desc {
+		max-width: 935px;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		span {
+			font-family: 'Montserrat';
+			font-weight: 700;
+		}
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+			line-height: 1rem;
+		}
+	}
+
+	&__logo {
+		flex: 1;
+		text-align: right;
+		@media (max-width: 1000px) {
+			text-align: left;
+		}
+		img {
+			@media (max-width: 768px) {
+				width: 150px;
+				height: 101px;
+			}
+			@media (max-width: 620px) {
+				width: 62px;
+				height: 45px;
+			}
+		}
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+	
+
+	&__card {
+		flex: 1 1 30%;
+		@media (max-width: 992px) {
+			flex: 1 1 100%;
+		}
+		@media (max-width: 768px) {
+			min-height: 100px;
+		}
+	}
+
+	&__service {
+		margin-top: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		font-weight: 700;
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+		@media (max-width: 992px) {
+			gap: 0;
+		}
+		span {
+			flex: 1 1 30%;
+			@media (max-width: 992px) {
+				flex: 1 1 100%;
+				font-size: 0.8rem;
+				line-height: 1rem;
+			}
+			@media (max-width: 620px) {
+				font-size: 0.6rem;
+				line-height: 0.7rem;
+			}
+		}
+	}
+}
+

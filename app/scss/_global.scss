@@ -184,7 +184,7 @@ body {
 	line-height: 1.4rem;
 	position: relative;
 	background: $white-color;
-	height: 120px;
+	min-height: 120px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -198,7 +198,7 @@ body {
 	}
 	
 	@media (max-width: 768px) {
-		height: 60px;
+		min-height: 60px;
 		font-size: 0.9rem;
 		line-height: 1rem;
 	}
@@ -211,5 +211,9 @@ body {
 		width: 20px;
 		height: 20px;
 		background: $black-color;
+		@media (max-width: 768px) {
+			width: 10px;
+			height: 10px;
+		}
 	}
 }
