@@ -51,10 +51,6 @@
 	&__form {
 		max-width: 934px;
 		margin: 0 auto;
-		// zaglushka
-		opacity: .5;
-		pointer-events: none;
-		cursor: default;
 	}
 
 	&__box {
@@ -108,10 +104,6 @@
 	&__btns {
 		text-align: center;
 		margin-bottom: 10px;
-		span {
-			display: block;
-			font-size: 0.7rem;
-		}
 	}
 
 	&__form-submit {

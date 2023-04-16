@@ -137,9 +137,96 @@
 		}
 	}
 
+	// COWORKING SECTION ONLY
+
+	&__coworking {
+		background: $yellow-color;
+		padding: 175px 0;
+		@media (max-width: 1439px) {
+			padding: 100px 0;
+		}
+		.container {
+			border-left: 100px solid $white-color;
+			border-right: 100px solid $white-color;
+			position: relative;
+			@media (max-width: 1439px) {
+				border: none;
+			}
+			&::before, &::after, .bottom-line-left, .bottom-line-right {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 150px;
+				height: 100px;
+				background: $white-color;
+				@media (max-width: 1439px) {
+					width: 0;
+					height: 0;
+					z-index: -1;
+				}
+			}
+
+			&::after, .bottom-line-right {
+				left: auto;
+				right: 0;
+			}
+
+			.bottom-line-left, .bottom-line-right {
+				top: auto;
+				bottom: 0;
+			}
+		}
+	}
+
+	&__body {
+		padding-top: 116px;
+	}
+
+	&__body-title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__body-cards {
+		display: flex;
+		gap: 125px;
+		max-width: 1178px;
+		margin: 0 auto 115px;
+		@media (max-width: 1439px) {
+			gap: 60px;
+		}
+	}
+
+	&__body-card {
+		flex: 1 1 28%;
+	}
+
+	&__body-card-title {
+		font-family: "Montserrat";
+		font-weight: 700;
+		margin-bottom: 6px;
+		font-size: 1.4rem;
+	}
+
+	&__body-card-text {
+		font-size: 1.2rem;
+	}
+
+	&__body-btns {
+		text-align: center;
+		button {
+			max-width: 445px;
+			width: 100%;
+		}
+	}
+
 }
 
 
+
+
+// !MENU
 .menu {
 	display: flex;
 	align-items: center;
@@ -221,9 +308,7 @@
 	}
 
 	&__switch {
-		opacity: 0.5;
-		pointer-events: none;
-		cursor: default;
 	}
+
 }
 
