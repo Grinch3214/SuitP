@@ -1,0 +1,77 @@
+.working {
+
+	&__box {
+		display: flex;
+		align-items: center;
+		@media (max-width: 620px) {
+			flex-flow: column;
+		}
+	}
+
+	&__image {
+		max-width: 959px;
+		width: 100%;
+		height: 634px;
+		line-height: 5px;
+		@media (max-width: 1000px) {
+			height: 560px;
+		}
+		@media (max-width: 768px) {
+			height: 350px;
+		}
+		@media (max-width: 620px) {
+			height: 212px;
+		}
+		img {
+			width: 50vw;
+			height: 100%;
+			object-fit: cover;
+			margin-left: calc(680px - 50vw);
+			@media (max-width: 1420px) {
+				margin-left: -30px;
+			}
+			@media (max-width: 620px) {
+				margin: 0 -30px;
+				width: 100vw;
+			}
+		}
+	}
+
+	&__inner {
+		margin-left: 30px;
+		@media (max-width: 620px) {
+			padding: 50px 0;
+			margin: 0;
+		}
+	}
+
+	&__inner-title {
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__inner-txt {
+		font-size: 1.2rem;
+		line-height: 30px;
+		margin-bottom: 40px;
+		@media (max-width: 768px) {
+			font-size: 0.7rem;
+			line-height: 18px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__inner-badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		@media (max-width: 768px) {
+			gap: 5px;
+		}
+	}
+
+	&__inner-badge {
+	}
+}
