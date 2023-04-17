@@ -54,10 +54,9 @@
 		span {
 			font-weight: 700;
 			font-size: 1.2rem;
-			line-height: 1.4rem;
+			line-height: 100%;
 			@media (max-width: 768px) {
 				font-size: 0.8rem;
-				line-height: 0.9rem;
 			}
 		}
 		img {

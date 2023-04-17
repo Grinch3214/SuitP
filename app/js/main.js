@@ -25,10 +25,14 @@
     try {
       const resources = await loadLanguageResources();
       const language = localStorage.getItem('language') || 'ua';
-			// this is kostil
+
+			// TODO: this is kostil
 			const logoElement = document.querySelector('.header__image img');
-			logoElement.src = `images/logo-${language}.svg`;
-			// kostil end
+			if(logoElement) {
+				logoElement.src = `images/logo-${language}.svg`;
+			}
+			// ***?kostil end
+
       await i18next.init({
         lng: language,
         debug: true,
@@ -48,10 +52,12 @@
         localStorage.setItem('language', newLanguage);
         i18next.changeLanguage(newLanguage);
 
-				// this is kostil
+				// TODO: this is kostil
 				const logoElement = document.querySelector('.header__image img');
-				logoElement.src = `images/logo-${newLanguage}.svg`;
-				// kostil end
+				if(logoElement) {
+					logoElement.src = `images/logo-${newLanguage}.svg`;
+				}
+				// ***?kostil end
       });
 
       i18next.on('languageChanged', () => {
