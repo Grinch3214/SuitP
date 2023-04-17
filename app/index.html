@@ -19,13 +19,14 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#aboutUs" class="menu__link">Про нас</a>
+									<a href="#aboutUs" class="menu__link i18nelement" data-i18n="global.aboutUs">Про нас</a>
 								</li>
 								<li class="menu__item">
-									<a href="coworking/" class="menu__link">Безпечний Коворкiнг</a>
+									<!-- <a href="coworking/" class="menu__link">Безпечний Коворкiнг</a> -->
+									<a href="#coworking" class="menu__link i18nelement" data-i18n="global.projects">Нашi проекти</a>
 								</li>
 								<li class="menu__item">
-									<a href="#contact" class="menu__link">Контакти</a>
+									<a href="#contact" class="menu__link i18nelement" data-i18n="global.contacts">Контакти</a>
 								</li>
 							</ul>
 						</nav>
@@ -44,11 +45,11 @@
 			</div>
 			<div class="header__main">
 				<div class="header__image">
-					<img src="images/logo.svg" alt="sUitp" width="690" height="328">
+					<img src="images/logo-ua.svg" alt="sUitp" width="690" height="328">
 				</div>
 				<div class="header__buttons">
-					<a href="#coworking" class="header__buttons-btn button button--yellow">Наші проекти</a>
-					<a href="#contact" class="header__buttons-btn button button--yellow">запит на вступ</a>
+					<a href="#coworking" class="header__buttons-btn button button--yellow i18nelement" data-i18n="global.projects">Наші проекти</a>
+					<a href="#contact" class="header__buttons-btn button button--yellow i18nelement" data-i18n="global.join">запит на вступ</a>
 				</div>
 			</div>
 		</div>
@@ -58,13 +59,15 @@
 		<section class="about" id="aboutUs">
 			<div class="container">
 				<div class="container-content">
-					<h2 class="about__title title">Про нас</h2>
-					<p class="about__text">
+					<h2 class="about__title title i18nelement" data-i18n="global.aboutUs">Про нас</h2>
+					<p class="about__text i18nelement" data-i18n="aboutUs.sectionText">
 						<span>ГО "Підтримки та розвитку українських продуктів індустрії відеоігор"</span> створена для системної підтримки українських продуктів індустрії відеоігор, а також компаній, команд та спеціалістів, які над ними працюють. Разом із партнерами – провідними технологічними компаніями світу – ми інвестуємо в економічне відновлення держави та підтримуємо відчизняну індустрію відеоігор.
 					</p>
 					<div class="about__boosteroid">
-						<span>За підтримки:</span>
-						<a href="https://boosteroid.com/" target="_blank"><img src="images/boosteroid_logo.svg" alt="Boosteroid" width="332" height="26"></a>
+						<span class="i18nelement" data-i18n="aboutUs.powered">За підтримки:</span>
+						<a href="https://boosteroid.com/" target="_blank">
+							<img src="images/boosteroid_logo.svg" alt="Boosteroid" width="332" height="26">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -74,9 +77,9 @@
 			<div class="container">
 				<div class="container-content">
 					<div class="coworking__box">
-						<h2 class="coworking__subtitle subtitle">Нашi проекти</h2>
-						<h3 class="coworking__title title">Безпечний Коворкiнг</h3>
-						<p class="coworking__text">
+						<h2 class="coworking__subtitle subtitle i18nelement" data-i18n="global.projects">Нашi проекти</h2>
+						<h3 class="coworking__title title i18nelement" data-i18n="coworkingSection.safeCoworking">Безпечний Коворкiнг</h3>
+						<p class="coworking__text i18nelement" data-i18n="coworkingSection.sectionText">
 							<span>Безкоштовні та безпечні офіси,</span> повністю обладнані технікою та усім необхідним, із безперебійним доступом до живлення та Інтернету
 						</p>
 					</div>
@@ -94,9 +97,9 @@
 				<div class="container-content">
 					<div class="coaching__box">
 						<div class="coaching__desc">
-							<h2 class="coaching__subtitle subtitle">Нашi проекти</h2>
-							<h3 class="coaching__title title">Коучінг</h3>
-							<p class="coaching__text">
+							<h2 class="coaching__subtitle subtitle i18nelement" data-i18n="global.projects">Нашi проекти</h2>
+							<h3 class="coaching__title title i18nelement" data-i18n="coaching.coaching">Коучінг</h3>
+							<p class="coaching__text i18nelement" data-i18n="coaching.sectionText">
 								Проекти та команди, відібрані Наглядовою Радою SUITP, матимуть доступ до коучингової програми, створеної <span>за підтримки Games Gathering</span>, найбільшої B2B-конференції у Східній Європі, присвяченій розробці ігор.
 							</p>
 						</div>
@@ -105,13 +108,13 @@
 						</div>
 					</div>
 					<div class="coaching__cards">
-						<div class="coaching__card suitp-card">
+						<div class="coaching__card suitp-card i18nelement" data-i18n="coaching.badgeOne">
 							Дизайн і розробка ігор
 						</div>
-						<div class="coaching__card suitp-card">
+						<div class="coaching__card suitp-card i18nelement" data-i18n="coaching.badgeTwo">
 							Розвиток бізнесу
 						</div>
-						<div class="coaching__card suitp-card">
+						<div class="coaching__card suitp-card i18nelement" data-i18n="coaching.badgeThree">
 							Go-to-market
 						</div>
 					</div>
@@ -124,10 +127,9 @@
 				<div class="container-content">
 					<div class="support__box">
 						<div class="support__desc">
-							<h2 class="support__subtitle subtitle">Нашi проекти</h2>
-							<h3 class="support__title title">Фінансування
-								та підтримка</h3>
-							<p class="support__text">
+							<h2 class="support__subtitle subtitle i18nelement" data-i18n="global.projects">Нашi проекти</h2>
+							<h3 class="support__title title i18nelement" data-i18n="support.support">Фінансування	та підтримка</h3>
+							<p class="support__text i18nelement" data-i18n="support.sectionText">
 								Проекти та команди, відібрані Наглядовою Радою, матимуть доступ до фінансування та підтримки від SUITP і партнерів.
 							</p>
 						</div>
@@ -136,20 +138,20 @@
 						</div>
 					</div>
 					<div class="support__cards">
-						<div class="support__card suitp-card">
+						<div class="support__card suitp-card i18nelement" data-i18n="support.badgeOne">
 							Прямі інвестиції в розвиток
 						</div>
-						<div class="support__card suitp-card">
+						<div class="support__card suitp-card i18nelement" data-i18n="support.badgeTwo">
 							Грошова та операційна підтримка з виходом на ринок
 						</div>
-						<div class="support__card suitp-card">
+						<div class="support__card suitp-card i18nelement" data-i18n="support.badgeThree">
 							Доступ до ресурсів учасників SUITP
 						</div>
 					</div>
 					<div class="support__service">
 						<span></span>
 						<span></span>
-						<span>напр. безкоштовне розміщення та просування гри на хмарному ігровому сервісі Boosteroid</span>
+						<span class="i18nelement" data-i18n="support.etsBoosteroid">напр. безкоштовне розміщення та просування гри на хмарному ігровому сервісі Boosteroid</span>
 					</div>
 				</div>
 				
@@ -160,26 +162,27 @@
 			<div class="container">
 				<div class="container-content">
 					<div class="contact__inner">
-						<h2 class="contact__title title">Зв’язатися з нами</h2>
-						<p class="contact__text">Залиште запит чи напишіть нам на пошту</p>
+						<h2 class="contact__title title i18nelement" data-i18n="contact.contactUs">Зв’язатися з нами</h2>
+						<p class="contact__text i18nelement" data-i18n="contact.subtitle">Залиште запит чи напишіть нам на пошту</p>
 						<a class="contact__mail" href="mailto:contact@suitp.info">contact@suitp.info</a>
 					</div>
 
 					<form class="contact__form">
 						<div class="contact__box">
 							<div class="contact__item form-floating">
-								<input class="contact__item-input form-floating__input" placeholder="Iм’я*" type="text">
+								<input class="contact__item-input form-floating__input" placeholder="Name*" type="text">
 							</div>
 							<div class="contact__item form-floating">
-								<input class="contact__item-input form-floating__input" placeholder="Пошта*" type="text">
+								<input class="contact__item-input form-floating__input" placeholder="E-mail*" type="text">
 							</div>
 							<div class="contact__item form-floating">
-								<textarea placeholder="Повідомлення*" class="contact__item-textarea form-floating__textarea"></textarea>
+								<textarea placeholder="Message*" class="contact__item-textarea form-floating__textarea"></textarea>
 							</div>
 						</div>
-						<p class="contact__agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із політикою конфіденційності</p>
+						<p class="contact__agree i18nelement" data-i18n="contact.agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із політикою конфіденційності</p>
 						<div class="contact__btns">
-							<button class="contact__form-submit button button--yellow">залишити запит</button>
+							<button class="contact__form-submit button button--yellow i18nelement" data-i18n="global.request">залишити запит</button>
+							<span class="i18nelement" data-i18n="contact.workLater"></span>
 						</div>
 					</form>
 				</div>

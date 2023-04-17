@@ -51,6 +51,9 @@
 	&__form {
 		max-width: 934px;
 		margin: 0 auto;
+		// zgshka
+		pointer-events: none;
+		opacity: .5;
 	}
 
 	&__box {
@@ -104,6 +107,11 @@
 	&__btns {
 		text-align: center;
 		margin-bottom: 10px;
+		// span soon work
+		span {
+			display: block;
+			margin-top: 8px;
+		}
 	}
 
 	&__form-submit {

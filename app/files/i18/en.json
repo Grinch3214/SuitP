@@ -1,3 +1,41 @@
 {
-	"test": "test"
+	"global": {
+		"aboutUs": "About Us",
+		"projects": "Our Projects",
+		"contacts": "Contacts",
+		"join": "admission",
+		"request": "Send request"
+	},
+	"aboutUs": {
+		"sectionText": "<span>PO ''support for Ukrainian it-products in video games industry''</span> was created to systematically support Ukrainian products of the video game industry, as well as companies, teams and specialists who work on them. Together with our partners - the world's leading technology companies - we invest in the economic recovery of the state and support the native video game industry.",
+		"powered": "Powered by:"
+	},
+	"coworkingSection": {
+		"safeCoworking": "Safe Coworking",
+		"sectionText": "<span>Free and secure offices,</span> fully equipped with furniture and appliances, with uninterrupted Internet access"
+	},
+	"coaching": {
+		"coaching": "Coaching",
+		"sectionText": "Projects and teams selected by the Supervisory Board, will have access to the coaching program established by <span>SUITP and Games Gathering,</span> the biggest B2B conference in Eastern Europe dedicated to game development.",
+		"badgeOne": "Game design and development",
+		"badgeTwo": "Business development",
+		"badgeThree": "Go-to-market etc."
+	},
+	"support": {
+		"support": "Funding & Support",
+		"sectionText": "Projects and teams selected by the Supervisory Board, will have access to funding & support by SUITP and partners.",
+		"badgeOne": "Direct investment in development",
+		"badgeTwo": "Direct investment in development",
+		"badgeThree": "Access to resources of SUITP contributors",
+		"etsBoosteroid": "e.g. free listing and promotion of a game on Boosteroid cloud gaming service"
+	},
+	"contact": {
+		"contactUs": "Contact Us",
+		"subtitle": "Leave a request or contact us via mail",
+		"name": "Name*",
+		"email": "E-mail*",
+		"message": "Message*",
+		"agree": "By submitting this form I consent to having SUITP collect and process my personal details and agree with Privacy policy",
+		"workLater": "Coming soon"
+	}
 }

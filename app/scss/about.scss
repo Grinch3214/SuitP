@@ -26,8 +26,10 @@
 		font-size: 1.2rem;
 		max-width: 850px;
 		margin-bottom: 195px;
+		line-height: 1.8rem;
 		@media (max-width: 768px) {
 			font-size: 0.8rem;
+			line-height: 1rem;
 			margin-bottom: 80px;
 		}
 		@media (max-width: 620px) {
@@ -44,7 +46,6 @@
 	&__boosteroid {
 		display: flex;
 		gap: 50px;
-		align-items: center;
 		@media (max-width: 768px) {
 			gap: 20px;
 			flex-flow: column;
