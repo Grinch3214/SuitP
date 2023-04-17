@@ -248,3 +248,22 @@ body {
 		resize: none;
 	}
 }
+
+// !badge-suitp
+.badge {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 0.9rem;
+	line-height: 22px;
+	background: $yellow-color;
+	padding: 16px 30px;
+	@media (max-width: 1000px) {
+		font-size: 0.8rem;
+		line-height: 100%;
+	}
+	@media (max-width: 768px) {
+		font-size: 0.6rem;
+		padding: 9px 10px;
+	}
+}
