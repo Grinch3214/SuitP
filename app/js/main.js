@@ -100,3 +100,31 @@
 		})
 	}
 })();
+
+function customScrollonPageLinks() {
+	const headerLinks = document.querySelectorAll('.menu__link');
+	headerLinks.forEach(link => {
+		link.addEventListener('click', function(event) {
+			if(window.innerWidth <=768) {
+				event.preventDefault();
+
+				let href = this.getAttribute('href').substring(1);
+
+				const scrollTarget = document.getElementById(href);
+				console.log(scrollTarget)
+				const topOffset = 103;
+				const elementPosition = scrollTarget.getBoundingClientRect().top;
+				const offsetPosition = elementPosition - topOffset;
+				window.scrollBy({
+					top: offsetPosition,
+					behavior: 'smooth'
+				})
+			}
+		})
+	})
+}
+customScrollonPageLinks();
+	
+window.addEventListener('resize', () => {
+	customScrollonPageLinks();
+});
