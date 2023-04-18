@@ -111,7 +111,6 @@ function customScrollonPageLinks() {
 				let href = this.getAttribute('href').substring(1);
 
 				const scrollTarget = document.getElementById(href);
-				console.log(scrollTarget)
 				const topOffset = 103;
 				const elementPosition = scrollTarget.getBoundingClientRect().top;
 				const offsetPosition = elementPosition - topOffset;
