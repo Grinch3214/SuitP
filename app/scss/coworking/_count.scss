@@ -1,0 +1,103 @@
+.count {
+	padding: 100px 0;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+	}
+	&__box {
+		display: flex;
+		gap: 30px;
+		@media (max-width: 992px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: 620px) {
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		flex: 1 1 26%;
+		font-size: 1.5rem;
+		text-align: center;
+		&:last-child {
+			@media (max-width: 992px) {
+				display: flex;
+				justify-content: center;
+			}
+			@media (max-width: 620px) {
+				justify-content: flex-start;
+			}
+		}
+		@media (max-width: 992px) {
+			flex: 1 1 47%;
+		}
+		@media (max-width: 620px) {
+			flex: 1 1 100%;
+			font-size: .8rem;
+			text-align: left;
+		}
+	}
+
+	&__item-box {
+		position: relative;
+		padding-left: 105px;
+		text-align: left;
+		@media (max-width: 1240px) {
+			padding-left: 60px;
+		}
+		svg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 51px;
+			height: 86px;
+			@media (max-width: 1240px) {
+				width: 41px;
+				height: 74px;
+			}
+		}
+	}
+
+	&__item-title {
+	}
+
+	&__item-conter {
+		font-family: "Montserrat";
+		font-weight: 700;
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+		@media (max-width: 1240px) {
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
+		@media (max-width: 620px) {
+			font-size: 1.8rem;
+			line-height: 2rem;
+		}
+		span {
+			font-family: "Jura";
+			font-weight: 400;
+			font-size: 1.5rem;
+			@media (max-width: 1240px) {
+				font-size: 1.1rem;
+			}
+			@media (max-width: 620px) {
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	&__item-small {
+		font-size: 1rem;
+		line-height: 1.1rem;
+		@media (max-width: 1240px) {
+			font-size: 0.9rem;
+		}
+		@media (max-width: 620px) {
+			font-size: .6rem;
+		}
+	}
+}
+
