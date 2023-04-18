@@ -102,7 +102,7 @@
 })();
 
 function customScrollonPageLinks() {
-	const headerLinks = document.querySelectorAll('.menu__link');
+	const headerLinks = document.querySelectorAll('.link');
 	headerLinks.forEach(link => {
 		link.addEventListener('click', function(event) {
 			if(window.innerWidth <=768) {
