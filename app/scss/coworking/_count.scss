@@ -22,8 +22,9 @@
 		font-size: 1.5rem;
 		text-align: center;
 		&:last-child {
+			display: flex;
+			justify-content: flex-end;
 			@media (max-width: 992px) {
-				display: flex;
 				justify-content: center;
 			}
 			@media (max-width: 620px) {

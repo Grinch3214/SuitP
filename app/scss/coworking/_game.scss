@@ -1,0 +1,119 @@
+.game {
+	padding: 100px 0;
+	background: $black-color;
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 620px) {
+		padding: 50px 0;
+	}
+	.container {
+		position: relative;
+	}
+
+	&__artwork {
+		width: 317px;
+		height: 657px;
+		position: absolute;
+		top: -177px;
+		right: 30px;
+		@media (max-width: 992px) {
+			width: 200px;
+			height: 550px;
+			top: -266px;
+		}
+		@media (max-width: 768px) {
+			width: 150px;
+			height: 500px;
+			top: -282px;
+			right: 0;
+		}
+		@media (max-width: 620px) {
+			top: -272px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		max-width: 1050px;
+		margin-bottom: 75px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__title {
+		color: $yellow-color;
+		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__txt {
+		color: $white-color;
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+			line-height: 1rem;
+		}
+	}
+
+	&__cards {
+		position: relative;
+		display: flex;
+		flex-flow: wrap;
+		gap: 4px;
+	}
+
+	&__card {
+		padding: 24px 85px 35px 40px;
+		flex: 1 1 48%;
+		background: url('../../images/1.svg') no-repeat 100% bottom, $yellow-color;
+		@media (max-width: 768px) {
+			background-size: auto 160px;
+			padding: 20px 30px 20px 20px;
+			min-height: 160px;
+		}
+		@media (max-width: 620px) {
+			flex: 1 1 100%;
+		}
+		&:nth-child(2) {
+			background: url('../../images/2.svg') no-repeat 100% bottom, $yellow-color;
+			@media (max-width: 768px) {
+				background-size: auto 160px;
+			}
+		}
+		&:nth-child(3) {
+			background: url('../../images/3.svg') no-repeat 100% bottom, $yellow-color;
+			@media (max-width: 768px) {
+				background-size: auto 160px;
+			}
+		}
+		&:nth-child(4) {
+			background: url('../../images/4.svg') no-repeat 100% bottom, $yellow-color;
+			@media (max-width: 768px) {
+				background-size: auto 160px;
+			}
+		}
+	}
+
+	&__card-title {
+		font-weight: 700;
+		font-size: 2.5rem;
+		line-height: 110%;
+		margin-bottom: 10px;
+		@media (max-width: 768px) {
+			font-size: .9rem;
+		}
+	}
+
+	&__card-text {
+		font-size: 1.2rem;
+		line-height: 120%;
+		@media (max-width: 768px) {
+			font-size: 0.8rem;
+		}
+	}
+}
