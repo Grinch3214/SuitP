@@ -27,7 +27,7 @@
 		@media (max-width: 992px) {
 			flex: 0 0 59px;
 			height: 43px;
-			margin-right: 50px;
+			margin-right: 20px;
 		}
 		@media (max-width: 768px) {
 			position: relative;
@@ -327,27 +327,37 @@
 		}
 	}
 
-	&__item {}
+	&__item {
+	}
 
 	&__list {
 		display: flex;
-		gap: 50px;
+		gap: 10px;
 		font-size: 1rem;
 		@media (max-width: 992px) {
-			gap: 30px;
+			gap: 5px;
 			font-size: 0.9rem;
 		}
 		@media (max-width: 768px) {
 			flex-flow: column;
-			gap: 20px;
 			font-weight: 700;
 		}
 	}
 
 	&__link {
 		text-decoration: none;
+		white-space: nowrap;
 		color: $black-color;
 		font-weight: 700;
+		padding: 20px 18px;
+		display: block;
+		@media (max-width: 992px) {
+			padding: 10px 15px;
+		}
+		&.active {
+			color: $white-color;
+			background-color: $black-color;
+		}
 	}
 
 	&__switch {
