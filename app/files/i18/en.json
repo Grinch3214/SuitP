@@ -4,7 +4,9 @@
 		"projects": "Our Projects",
 		"contacts": "Contacts",
 		"join": "admission",
-		"request": "Send request"
+		"request": "Send request",
+		"saveCoworking": "Safe coworking",
+		"wantIn": "I want in"
 	},
 	"aboutUs": {
 		"sectionText": "<span>PO ''support for Ukrainian it-products in video games industry''</span> was created to systematically support Ukrainian products of the video game industry, as well as companies, teams and specialists who work on them. Together with our partners - the world's leading technology companies - we invest in the economic recovery of the state and support the native video game industry.",
@@ -37,5 +39,66 @@
 		"message": "Message*",
 		"agree": "By submitting this form I consent to having SUITP collect and process my personal details and agree with Privacy policy",
 		"workLater": "Coming soon"
+	},
+
+	"coworkingPage": {
+		"coworking": "Safe coworking",
+		"free": "Underground Shelters",
+		"freeContent": "Most jobs are in the sheltered area. Work continuously during alarms.",
+		"safe": "Reliable internet",
+		"safeContent": "Diesel generators and high-speed Internet in case of blackouts",
+		"allhave": "Additional Services",
+		"allhaveContent": "Delicious coffee, tea and snacks, a lounge area and a large game area"
+	},
+	"workPage": {
+		"title": "Working space",
+		"content": "Робочі місця обладнані технікою із безперебійним доступом до живлення та інтернету.",
+		"free": "Безкоштовно",
+		"safe":"Безпечно",
+		"workPlace": "до 500 робочих місць"
+	},
+	"count": {
+		"totalSpace": "Total space",
+		"totalSpaceCount": "2.5-5 k m2",
+		"totalPlace": "Shelter area",
+		"totalPlaceCount": "1000 m2",
+		"totalPlaceZone": "All workplaces are in a safe area",
+		"volunteer": "For volunteers",
+		"volunteerCount": "15%<span>from space</span>"
+	},
+	"equipment": {
+		"title": "Necessary equipment",
+		"content": "Everything you need for comfortable work",
+		"badgePc": "Computers",
+		"badgeNote": "Laptops",
+		"badgeEnergy": "Chargers",
+		"badgeEquipment": "Video conferencing equipment",
+		"badgeAdapter": "Cables and adapters"
+	},
+	"game": {
+		"title": "Game and lounge area",
+		"content": "A recreation area where everyone can choose an activity for themselves. Video zone with sofas, computers, huge TVs and ultra-modern sound systems. Play or chat, you choose.",
+		"cardOneTitle": "Cloud Gaming",
+		"cardOneText": "Hundreds of games from popular platforms on any device thanks to the Boosteroid cloud service",
+		"cardTwoTitle": "Game gadgets",
+		"cardTwoText": "Play Playstation 5, xBox, Steam Deck or immerse yourself in augmented reality thanks to VR gadgets.",
+		"cardThirdTitle": "Recreation area",
+		"cardThirdText": "Here you can relax, distract yourself from work, chat or just listen to music or be in silence.",
+		"cardFourTitle": "Cozy cafe",
+		"cardFourText": "Own kitchen with goodies, talented barista. Here you can taste delicious business lunches and many different dishes."
+	},
+	"care": {
+		"title": "We will take care of you",
+		"badge1": "Assistance in conducting events",
+		"badge2": "Internal networking",
+		"badge3": "HR assistance",
+		"content": "And we will also provide the necessary for your comfort and safety:",
+		"badge4": "Storage chambers",
+		"badge5": "Shower",
+		"badge6": "Advanced security system",
+		"badge7": "Quality air conditioning systems",
+		"badge8": "Cleaning",
+		"badge9": "Office supplies",
+		"badge10": "First aid kit and medicines"
 	}
 }
