@@ -11,12 +11,29 @@
 		display: flex;
 		align-items: center;
 		gap: 130px;
+		@media (max-width: 1200px) {
+			gap: 50px;
+		}
+		@media (max-width: 992px) {
+			flex-flow: column;
+			align-items: flex-start;
+			gap: 30px;
+		}
+		@media (max-width: 620px) {
+			gap: 20px;
+		}
 	}
 
 	&__logo {
 		flex: 1 1 40%;
 		img {
 			width: 100%;
+			@media (max-width: 992px) {
+				height: 320px;
+			}
+			@media (max-width: 768px) {
+				height: 150px;
+			}
 		}
 	}
 
