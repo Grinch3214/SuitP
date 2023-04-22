@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../images/favicon.svg">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.min.css">
+	<title>About Us</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<a class="header__logo" href="../">
+						<img width="96" height="70" src="../images/sUitp.svg" alt="sUitp">
+					</a>
+					<div class="header__menu menu">
+						<div class="menu__wrap">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="../about-us/" class="menu__link i18nelement" data-i18n="global.aboutUs">Про нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="../coworking/" class="menu__link i18nelement" data-i18n="global.saveCoworking">Безпечний Коворкiнг</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link i18nelement active" data-i18n="global.contacts">Контакти</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="menu__switch switch">
+								<input class="switch__input" id="switchLang" type="checkbox">
+								<label class="switch__label" for="switchLang">
+									<span>UA</span>
+									<span>ENG</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="header__icon">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+	
+		<main>
+			<section class="contact" id="contact">
+				<div class="container">
+					<div class="container-content">
+						<div class="contact__inner">
+							<h2 class="contact__title title i18nelement" data-i18n="contact.contactUs">Зв’язатися з нами</h2>
+							<p class="contact__text i18nelement" data-i18n="contact.subtitle">Залиште запит чи напишіть нам на пошту</p>
+							<a class="contact__mail" href="mailto:contact@suitp.info">contact@suitp.info</a>
+						</div>
+	
+						<form class="contact__form">
+							<div class="contact__box">
+								<div class="contact__item form-floating">
+									<input id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
+									<label for="name">Name*</label>
+								</div>
+								<div class="contact__item form-floating">
+									<input id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
+									<label for="email">E-mail*</label>
+								</div>
+								<div class="contact__item form-floating">
+									<textarea class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
+									<label>Message*</label>
+								</div>
+							</div>
+							<p class="contact__agree"><span class="i18nelement" data-i18n="contact.agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із</span> <a class="i18nelement" data-i18n="contact.agreeLink" href="#">політикою конфіденційності</a></p>
+							<div class="contact__btns">
+								<button class="contact__form-submit button button--yellow i18nelement" data-i18n="global.request">залишити запит</button>
+							</div>
+						</form>
+					</div>
+					
+	
+	
+					<!-- <div class="form-floating">
+						<input placeholder="email *" id="id" type="text" class="form-floating__input">
+						<label for="id">float</label>
+					</div>
+					<div class="form-floating">
+						<textarea placeholder="email *" class="form-floating__textarea"></textarea>
+						<label for="id">float</label>
+					</div> -->
+				</div>
+			</section>
+		</main>
+	
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__box">
+					<a class="footer__box-mail" href="mailto:contact@suitp.info">contact@suitp.info</a>
+					<p class="footer__box-text">SUITP. All rights reserved</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="../js/main.min.js"></script>
+</body>
+</html>

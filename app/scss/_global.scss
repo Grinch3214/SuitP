@@ -24,6 +24,11 @@ body {
 	line-height: 1.2rem;
 	color: $black-color;
 }
+.wrapper {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
 .lock {
 	overflow: hidden;
 }
@@ -236,6 +241,18 @@ body {
 }
 
 .form-floating {
+	position: relative;
+
+	label, span {
+		position: absolute;
+		top: 23px;
+		left: 0;
+		font-size: 0.9rem;
+		transition: all .2s linear;
+		color: $gray-color;
+		pointer-events: none;
+	}
+
 	&__input, &__textarea {
 		width: 100%;
 		padding: 23px 0;
@@ -251,6 +268,14 @@ body {
 		&:focus {
 			outline: none;
 			border-color: $second-color;
+		}
+
+		&:focus + label,
+		&:focus + span,
+		&:not(:placeholder-shown) + span
+		&:not(:placeholder-shown) + label {
+			top: 0;
+			font-size: 0.6rem;
 		}
 	}
 

@@ -37,8 +37,8 @@
 		"name": "Name*",
 		"email": "E-mail*",
 		"message": "Message*",
-		"agree": "By submitting this form I consent to having SUITP collect and process my personal details and agree with Privacy policy",
-		"workLater": "Coming soon"
+		"agree": "By submitting this form I consent to having SUITP collect and process my personal details and agree with",
+		"agreeLink": "Privacy policy"
 	},
 
 	"coworkingPage": {

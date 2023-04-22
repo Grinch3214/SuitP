@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" href="images/favicon.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SuitP</title>
 	<link rel="stylesheet" href="css/style.min.css">
@@ -170,19 +171,21 @@
 					<form class="contact__form">
 						<div class="contact__box">
 							<div class="contact__item form-floating">
-								<input class="contact__item-input form-floating__input" placeholder="Name*" type="text">
+								<input id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
+								<label for="name">Name*</label>
 							</div>
 							<div class="contact__item form-floating">
-								<input class="contact__item-input form-floating__input" placeholder="E-mail*" type="text">
+								<input id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
+								<label for="email">E-mail*</label>
 							</div>
 							<div class="contact__item form-floating">
-								<textarea placeholder="Message*" class="contact__item-textarea form-floating__textarea"></textarea>
+								<textarea class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
+								<label>Message*</label>
 							</div>
 						</div>
-						<p class="contact__agree i18nelement" data-i18n="contact.agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із політикою конфіденційності</p>
+						<p class="contact__agree"><span class="i18nelement" data-i18n="contact.agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із</span> <a class="i18nelement" data-i18n="contact.agreeLink" href="#">політикою конфіденційності</a></p>
 						<div class="contact__btns">
 							<button class="contact__form-submit button button--yellow i18nelement" data-i18n="global.request">залишити запит</button>
-							<span class="i18nelement" data-i18n="contact.workLater"></span>
 						</div>
 					</form>
 				</div>

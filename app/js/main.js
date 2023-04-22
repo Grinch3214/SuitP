@@ -127,3 +127,24 @@ customScrollonPageLinks();
 window.addEventListener('resize', () => {
 	customScrollonPageLinks();
 });
+
+(function() {
+	const floatInput = document.querySelectorAll('.float-input');
+	const floatLabel = document.querySelectorAll('.float-input + label');
+
+	floatInput.forEach((item, index) => {
+		item.addEventListener('input', () => {
+			console.log(item.value.length)
+			if (item.value.length !== 0) {
+				floatLabel[index].style = `
+				top: 0;
+				font-size: 0.6rem;
+				`
+			} else {
+				floatLabel[index].style = `
+				top: 23;
+				`
+			}
+		})
+	})
+})();
