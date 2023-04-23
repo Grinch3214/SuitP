@@ -74,15 +74,15 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 20;
-		max-width: 280px;
-		padding: 30px 35px 20px;
-		background: #151923;
-		border-radius: 10px;
+		max-width: 300px;
+		padding: 50px;
+		background: $white-color;
+		border: 1px solid $black-color;
 		text-align: center;
 
 		@media screen and (min-width: 425px) {
-			padding: 50px 55px 40px;
-			max-width: 400px;
+			padding: 50px 55px 50px;
+			max-width: 398px;
 		}
 	}
 

@@ -124,5 +124,9 @@
 		"card1": "approve buildings for co-working",
 		"card2": "select IT-projects for their further support",
 		"card3": "issue accreditations for companies, teams, people for access to co-working"
+	},
+	"popup": {
+		"title": "Thank you",
+		"text": "Request has been sent"
 	}
 }
