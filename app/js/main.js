@@ -117,10 +117,12 @@ function linkAnotherPage() {
 			const elementPosition = targetElement.getBoundingClientRect().top;
 			const offsetPosition = elementPosition - topOffset;
 
-			window.scrollTo({
-				top: offsetPosition,
-				behavior: 'smooth'
-			});
+			setTimeout(() => {
+				window.scrollTo({
+					top: offsetPosition,
+					behavior: 'smooth'
+				});
+			}, 400)
 		}
 	}
 };
