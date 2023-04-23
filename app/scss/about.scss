@@ -25,15 +25,15 @@
 	&__text {
 		font-size: 1.2rem;
 		max-width: 850px;
-		margin-bottom: 195px;
+		margin-bottom: 40px;
 		line-height: 1.8rem;
 		@media (max-width: 768px) {
 			font-size: 0.8rem;
 			line-height: 1rem;
-			margin-bottom: 80px;
+			margin-bottom: 30px;
 		}
 		@media (max-width: 620px) {
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 		span {
 			font-weight: 700;
@@ -41,6 +41,12 @@
 	}
 
 	&__button {
+		margin-bottom: 85px;
+		max-width: 325px;
+		width: 100%;
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__boosteroid {
