@@ -53,10 +53,10 @@
 	},
 	"workPage": {
 		"title": "Working space",
-		"content": "Робочі місця обладнані технікою із безперебійним доступом до живлення та інтернету.",
-		"free": "Безкоштовно",
-		"safe":"Безпечно",
-		"workPlace": "до 500 робочих місць"
+		"content": "Workplaces are equipped with equipment with uninterrupted access to power and the Internet.",
+		"free": "Free of charge",
+		"safe":"Safe",
+		"workPlace": "500 - 1000 workplaces"
 	},
 	"count": {
 		"totalSpace": "Total space",
