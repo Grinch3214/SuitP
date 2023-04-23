@@ -210,7 +210,6 @@ body {
 	min-height: 120px;
 	padding: 20px;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 	font-weight: 700;
@@ -224,6 +223,8 @@ body {
 		min-height: 60px;
 		font-size: 0.9rem;
 		line-height: 1rem;
+		justify-content: center;
+		text-align: center;
 	}
 
 	&::before {
