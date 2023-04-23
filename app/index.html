@@ -168,18 +168,23 @@
 						<a class="contact__mail" href="mailto:contact@suitp.info">contact@suitp.info</a>
 					</div>
 
-					<form class="contact__form">
+					<form class="contact__form" action="https://formspree.io/f/xlekanwv" method="POST" target="_blank">
+						<p class="contact__popup"></p>
+							<div class="contact__request">
+								<p class="contact__request-title">Thank you!</p>
+								<p class="contact__request-txt">Request has been sent</p>
+							</div>
 						<div class="contact__box">
 							<div class="contact__item form-floating">
-								<input id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
+								<input name="name" id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
 								<label for="name">Name*</label>
 							</div>
 							<div class="contact__item form-floating">
-								<input id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
+								<input name="email" id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
 								<label for="email">E-mail*</label>
 							</div>
 							<div class="contact__item form-floating">
-								<textarea class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
+								<textarea name="message" class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
 								<label>Message*</label>
 							</div>
 						</div>
@@ -189,17 +194,7 @@
 						</div>
 					</form>
 				</div>
-				
-
-
-				<!-- <div class="form-floating">
-					<input placeholder="email *" id="id" type="text" class="form-floating__input">
-					<label for="id">float</label>
-				</div>
-				<div class="form-floating">
-					<textarea placeholder="email *" class="form-floating__textarea"></textarea>
-					<label for="id">float</label>
-				</div> -->
+			
 			</div>
 		</section>
 	</main>

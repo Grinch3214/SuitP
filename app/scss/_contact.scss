@@ -51,9 +51,55 @@
 	&__form {
 		max-width: 934px;
 		margin: 0 auto;
+		position: relative;
 		// zgshka
 		// pointer-events: none;
 		// opacity: .5;
+	}
+
+	&__popup {
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: crimson;
+		font-size: 24px;
+	}
+
+	&__request {
+		display: none;
+		position: fixed;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 20;
+		max-width: 280px;
+		padding: 30px 35px 20px;
+		background: #151923;
+		border-radius: 10px;
+		text-align: center;
+
+		@media screen and (min-width: 425px) {
+			padding: 50px 55px 40px;
+			max-width: 400px;
+		}
+	}
+
+	&__request-title {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 40px;
+		margin: 15px 0;
+		@media screen and (min-width: 425px) {
+			font-size: 34px;
+		}
+	}
+
+	&__request-txt {
+		color: #9B99AD;
+		line-height: 18px;
+		font-size: 14px;
 	}
 
 	&__box {

@@ -57,24 +57,29 @@
 							<a class="contact__mail" href="mailto:contact@suitp.info">contact@suitp.info</a>
 						</div>
 	
-						<form class="contact__form">
+						<form class="contact__form" action="https://formspree.io/f/xlekanwv" method="POST" target="_blank">
+							<p class="contact__popup"></p>
+							<div class="contact__request">
+								<p class="contact__request-title">Thank you!</p>
+								<p class="contact__request-txt">Request has been sent</p>
+							</div>
 							<div class="contact__box">
 								<div class="contact__item form-floating">
-									<input id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
+									<input name="name" id="name" class="contact__item-input form-floating__input float-input" type="text" required placeholder="">
 									<label for="name">Name*</label>
 								</div>
 								<div class="contact__item form-floating">
-									<input id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
+									<input name="email" id="email" class="contact__item-input form-floating__input float-input" type="email" required placeholder="">
 									<label for="email">E-mail*</label>
 								</div>
 								<div class="contact__item form-floating">
-									<textarea class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
+									<textarea name="message" class="contact__item-textarea form-floating__textarea float-input" required placeholder=""></textarea>
 									<label>Message*</label>
 								</div>
 							</div>
 							<p class="contact__agree"><span class="i18nelement" data-i18n="contact.agree">Надсилаючи цю форму, я даю згоду на збір та обробку моїх особистих даних SUITP, а також погоджуюсь із</span> <a class="i18nelement" data-i18n="contact.agreeLink" href="#">політикою конфіденційності</a></p>
 							<div class="contact__btns">
-								<button class="contact__form-submit button button--yellow i18nelement" data-i18n="global.request">залишити запит</button>
+								<button class="contact__form-submit button button--yellow i18nelement" data-i18n="global.leave">залишити запит</button>
 							</div>
 						</form>
 					</div>

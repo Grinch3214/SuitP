@@ -134,7 +134,6 @@ window.addEventListener('resize', () => {
 
 	floatInput.forEach((item, index) => {
 		item.addEventListener('input', () => {
-			console.log(item.value.length)
 			if (item.value.length !== 0) {
 				floatLabel[index].style = `
 				top: 0;
@@ -148,3 +147,46 @@ window.addEventListener('resize', () => {
 		})
 	})
 })();
+
+function formSend() {
+	const form = document.querySelector('.contact__form');
+	const popup = document.querySelector('.contact__popup');
+	const popupSend = document.querySelector('.contact__request');
+
+	if(form) {
+		async function handleSubmit(event) {
+			event.preventDefault();
+			let data = new FormData(event.target);
+
+			fetch(event.target.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if(response.ok) {
+					popupSend.style.display = 'block';
+					form.reset();
+					setTimeout(() => {popupSend.style.display = 'none'}, 3000);
+				} else {
+					response.json().then(data => {
+						if(Object.hasOwn(data, 'errors')) {
+							popup.innerHTML = data['errors'].map(error => error['message']).join(', ')
+							setTimeout(() => {popup.innerHTML = ''}, 3000);
+						} else {
+							popup.innerHTML = "Oops! There was a problem submitting your form"
+							setTimeout(() => {popup.innerHTML = ''}, 3000);
+						}
+					})
+				}
+			}).catch(error => {
+				popup.innerHTML = "Oops! There was a problem submitting your form"
+				setTimeout(() => {popup.innerHTML = ''}, 3000);
+			});
+		}
+		form.addEventListener('submit', handleSubmit)
+	}
+}
+
+formSend();
