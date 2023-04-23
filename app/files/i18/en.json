@@ -105,6 +105,7 @@
 	},
 
 	"aboutPageGoals": {
+		"mainText": "<span>SUITP unites with the world's leading technology companies to help Ukrainian game industry develop despite the war that still rages on across the country.</span> Our projects aim to ensure Ukrainian game developers have all they need to successfully compete in the international market like they've always done.",
 		"title": "SUITP goals",
 		"card1": "<span>Establish a network of free, secure co-working centers</span> for Ukrainian companies, teams and individuals working on IT-products in the video games industry in Kyiv, Kharkiv, Odessa, Dnipro, Lviv and other cities of Ukraine.",
 		"card2": "<span>Provide coaching and support</span> for companies and teams related to video games industry, business development, etc.",

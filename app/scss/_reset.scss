@@ -21,6 +21,9 @@ time, mark, audio, video, button, input, textarea {
 	font: inherit;
 	vertical-align: baseline;
 }
+picture {
+	line-height: 0;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
