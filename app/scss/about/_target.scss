@@ -88,7 +88,9 @@
 			}
 			svg {
 				width: 57px;
-				left: 36px;
+				@media (max-width: 1100px) {
+					left: 36px;
+				}
 				@media (max-width: 768px) {
 					width: 27px;
 					left: 15px;

@@ -100,5 +100,28 @@
 		"badge8": "Cleaning",
 		"badge9": "Office supplies",
 		"badge10": "First aid kit and medicines"
+	},
+
+	"aboutPageGoals": {
+		"title": "SUITP goals",
+		"card1": "<span>Establish a network of free, secure co-working centers</span> for Ukrainian companies, teams and individuals working on IT-products in the video games industry in Kyiv, Kharkiv, Odessa, Dnipro, Lviv and other cities of Ukraine.",
+		"card2": "<span>Provide coaching and support</span> for companies and teams related to video games industry, business development, etc.",
+		"card3": "Set up <span>funding programs</span> for selected Ukrainian projects in the video games industry."
+	},
+
+	"aboutPageStructure": {
+		"title": "Structure",
+		"subtitle1": "Supervisory Board:",
+		"badge1": "Government and municipal authorities",
+		"badge1_span": "(incl. deputy-minister of digital transformation)",
+		"badge2": "International & domestic companies",
+		"badge2_span": "(incl. regional head in Eastern Europe at ASUS)",
+		"badge3": "Game industry representatives",
+		"badge3_span": "(incl. CEO at Games Gathering)",
+
+		"subtitle2": "Powers:",
+		"card1": "approve buildings for co-working",
+		"card2": "select IT-projects for their further support",
+		"card3": "issue accreditations for companies, teams, people for access to co-working"
 	}
 }
