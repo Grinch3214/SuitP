@@ -48,19 +48,19 @@
 
 	"coworkingPage": {
 		"coworking": "Safe coworking",
-		"free": "Underground Shelters",
-		"freeContent": "Most jobs are in the sheltered area. Work continuously during alarms.",
-		"safe": "Reliable internet",
-		"safeContent": "Diesel generators and high-speed Internet in case of blackouts",
-		"allhave": "Additional Services",
-		"allhaveContent": "Delicious coffee, tea and snacks, a lounge area and a large game area"
+		"free": "Free of charge",
+		"freeContent": "Access is completely free for SUITP accredited individuals",
+		"safe": "Safe",
+		"safeContent": "Workplaces located in shelter zone",
+		"allhave": "Everything you need",
+		"allhaveContent": "Fully equipped areas for work and rest"
 	},
 	"workPage": {
 		"title": "Working space",
-		"content": "Workplaces are equipped with equipment with uninterrupted access to power and the Internet.",
+		"content": "Workplaces are furnished with equipment with uninterrupted access to power and the Internet.",
 		"free": "Free of charge",
 		"safe":"Safe",
-		"workPlace": "500 - 1000 workplaces"
+		"workPlace": "up to 500 workplaces"
 	},
 	"count": {
 		"totalSpace": "Total space",
@@ -73,7 +73,7 @@
 	},
 	"equipment": {
 		"title": "Necessary equipment",
-		"content": "Everything you need for comfortable work",
+		"content": "Everything you need to work cozy",
 		"badgePc": "Computers",
 		"badgeNote": "Laptops",
 		"badgeEnergy": "Chargers",
@@ -86,7 +86,7 @@
 		"cardOneTitle": "Cloud Gaming",
 		"cardOneText": "Hundreds of games from popular platforms on any device thanks to the Boosteroid cloud service",
 		"cardTwoTitle": "Game gadgets",
-		"cardTwoText": "Play Playstation 5, xBox, Steam Deck or immerse yourself in augmented reality thanks to VR gadgets.",
+		"cardTwoText": "Play Playstation 5, Xbox, Steam Deck or immerse yourself in augmented reality thanks to VR gadgets.",
 		"cardThirdTitle": "Recreation area",
 		"cardThirdText": "Here you can relax, distract yourself from work, chat or just listen to music or be in silence.",
 		"cardFourTitle": "Cozy cafe",
@@ -108,7 +108,7 @@
 	},
 
 	"aboutPageGoals": {
-		"mainText": "<span>SUITP unites with the world's leading technology companies to help Ukrainian game industry develop despite the war that still rages on across the country.</span> Our projects aim to ensure Ukrainian game developers have all they need to successfully compete in the international market like they've always done.",
+		"mainText": "<span>SUITP</span> unites with the world's leading technology companies to help Ukrainian game industry develop despite the war that still rages on across the country. Our projects aim to ensure Ukrainian game developers have all they need to successfully compete in the international market like they've always done.",
 		"title": "SUITP goals",
 		"card1": "<span>Establish a network of free, secure co-working centers</span> for Ukrainian companies, teams and individuals working on IT-products in the video games industry in Kyiv, Kharkiv, Odessa, Dnipro, Lviv and other cities of Ukraine.",
 		"card2": "<span>Provide coaching and support</span> for companies and teams related to video games industry, business development, etc.",

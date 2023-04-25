@@ -206,7 +206,7 @@
 
 	&__body-cards {
 		display: flex;
-		gap: 125px;
+		gap: 100px;
 		max-width: 1178px;
 		margin: 0 auto 115px;
 		@media (max-width: 1439px) {
@@ -258,6 +258,9 @@
 
 	&__body-btns {
 		text-align: center;
+		@media (max-width: 620px) {
+			text-align: left;
+		}
 		button, a {
 			max-width: 445px;
 			width: 100%;
